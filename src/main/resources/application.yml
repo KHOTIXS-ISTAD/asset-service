@@ -7,19 +7,18 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:9090
+          issuer-uri: http://35.193.215.248:9090
 
   config:
     import: "optional:configserver:"
   cloud:
     config:
-      uri: http://localhost:8888
-      username: user
-      password: password
+      uri: http://35.193.215.248:8888
+
     stream:
       kafka:
         binder:
-          brokers: 143.198.83.9:9092
+          brokers: 35.193.215.248:50008
     bus:
       trace:
         enabled: true
@@ -48,3 +47,6 @@ logging:
       springframework:
         security: DEBUG
         web: DEBUG
+
+server:
+  port: 8889
