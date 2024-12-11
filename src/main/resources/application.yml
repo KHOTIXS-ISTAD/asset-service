@@ -36,8 +36,6 @@ management:
   endpoint:
     health:
       show-details: always
-    refresh:
-      access: read_only
 
 logging:
   level:
