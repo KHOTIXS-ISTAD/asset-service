@@ -38,7 +38,7 @@ management:
     health:
       show-details: always
     refresh:
-      access: read_only
+      enabled: true
 
 logging:
   level:
