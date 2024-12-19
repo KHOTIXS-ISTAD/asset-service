@@ -29,7 +29,7 @@ public class FileController {
 
 
     @ResponseStatus(HttpStatus.CREATED)
-    @PreAuthorize("hasAnyAuthority('file:write')")
+//    @PreAuthorize("hasAnyAuthority('file:write')")
     @PostMapping(value = "", consumes = "multipart/form-data")
     FileResponse uploadFile(@RequestPart MultipartFile file) {
 
@@ -38,20 +38,20 @@ public class FileController {
 
 
     @GetMapping()
-    @PreAuthorize("hasAnyAuthority('file:read')")
+//    @PreAuthorize("hasAnyAuthority('file:read')")
     List<FileResponse> loadAllFile() {
         return fileService.loadAllFiles();
     }
 
 
     @GetMapping("/{fileName}")
-    @PreAuthorize("hasAnyAuthority('file:read')")
+//    @PreAuthorize("hasAnyAuthority('file:read')")
     FileResponse loadFileByName(@PathVariable String fileName) {
         return fileService.loadFileByName(fileName);
     }
 
 
-    @PreAuthorize("hasAnyAuthority('file:delete')")
+//    @PreAuthorize("hasAnyAuthority('file:delete')")
     @DeleteMapping("/{fileName}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     void deleteFileByName(@PathVariable String fileName) {
