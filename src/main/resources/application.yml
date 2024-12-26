@@ -7,18 +7,18 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://35.193.215.248:9090
+          issuer-uri: http://34.69.50.191:9090
 
   config:
     import: "optional:configserver:"
   cloud:
     config:
-      uri: http://35.193.215.248:8888
+      uri: http://config-server:8888
 
     stream:
       kafka:
         binder:
-          brokers: 35.193.215.248:50008
+          brokers: 34.69.50.191:9092
     bus:
       trace:
         enabled: true
