@@ -38,7 +38,7 @@ public class FileController {
 
 
     @GetMapping()
-    @PreAuthorize("hasAnyAuthority('file:read')")
+//    @PreAuthorize("hasAnyAuthority('file:read')")
     List<FileResponse> loadAllFile() {
         return fileService.loadAllFiles();
     }

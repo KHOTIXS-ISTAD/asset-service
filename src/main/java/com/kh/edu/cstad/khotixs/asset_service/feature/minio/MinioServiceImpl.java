@@ -4,6 +4,7 @@ import io.minio.*;
 import io.minio.errors.MinioException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -11,6 +12,7 @@ import java.io.InputStream;
 
 @Service
 @RequiredArgsConstructor
+@RefreshScope
 public class MinioServiceImpl implements MinioService {
 
     private final MinioClient minioClient;
