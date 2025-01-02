@@ -50,3 +50,4 @@ logging:
 
 server:
   port: 8889
+  forward-headers-strategy: framework
