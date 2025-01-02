@@ -7,7 +7,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://34.69.50.191:9090
+          issuer-uri: https://khotixs-auth.devkh.asia
 
   config:
     import: "optional:configserver:"
