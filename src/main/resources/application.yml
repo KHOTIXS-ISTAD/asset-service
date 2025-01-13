@@ -15,17 +15,17 @@ spring:
     config:
       uri: http://config-server:8888
 
-    stream:
-      kafka:
-        binder:
-          brokers: 34.69.50.191:9092
-    bus:
-      trace:
-        enabled: true
-      refresh:
-        enabled: true
-      env:
-        enabled: true
+#    stream:
+#      kafka:
+#        binder:
+#          brokers: 34.69.50.191:9092
+#    bus:
+#      trace:
+#        enabled: true
+#      refresh:
+#        enabled: true
+#      env:
+#        enabled: true
 
 management:
   endpoints:

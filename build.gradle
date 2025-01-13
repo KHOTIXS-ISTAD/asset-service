@@ -59,7 +59,7 @@ dependencies {
 	implementation 'org.springframework.cloud:spring-cloud-starter-config'
 
 	//auto refresh config
-	implementation 'org.springframework.cloud:spring-cloud-starter-bus-kafka'
+//	implementation 'org.springframework.cloud:spring-cloud-starter-bus-kafka'
 
 	//monitoring
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
