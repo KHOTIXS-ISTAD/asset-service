@@ -2,7 +2,7 @@ spring:
   application:
     name: asset-service
   profiles:
-    active: dev
+    active: local
   security:
     oauth2:
       resourceserver:
@@ -13,8 +13,8 @@ spring:
     import: "optional:configserver:"
   cloud:
     config:
-      uri: http://config-server:8888
-#      uri: http://khotixs-config-server.devkh.asia
+#      uri: http://config-server:8888
+      uri: http://202.178.125.77:8888
 
 #    stream:
 #      kafka:
